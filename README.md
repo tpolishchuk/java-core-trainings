@@ -4,11 +4,13 @@ How to handle this project?
 Workshop tasks
 ==============
 
-All homework for each workshop is places to appropriate [resources](src/resources/tasks/) folder of this workshop
+All homework for each workshop is places to appropriate [resources](https://github.com/tpolishchuk/java-core-trainings/tree/master/src/main/resources/tasks) folder of this workshop
+
 Examples:
-* [Tasks for Workshop #1](src/resources/tasks/workshop_1/)
-* [Tasks for Workshop #2](src/resources/tasks/workshop_2/)
-Homework is designed for 1-2 hours weekly
+* [Tasks for Workshop #1](https://github.com/tpolishchuk/java-core-trainings/tree/master/src/main/resources/tasks/workshop_1)
+* [Tasks for Workshop #2](https://github.com/tpolishchuk/java-core-trainings/tree/master/src/main/resources/tasks/workshop_2)
+
+Homework is designed for doing during 1-2 hours weekly
 
 Project packages
 ================
