@@ -4,7 +4,7 @@ How to handle this project?
 Workshop tasks
 ==============
 
-All homework for each workshop is places to appropriate [resources](https://github.com/tpolishchuk/java-core-trainings/tree/master/src/main/resources/tasks) folder of this workshop
+All homework for each workshop is placed to appropriate [resources](https://github.com/tpolishchuk/java-core-trainings/tree/master/src/main/resources/tasks) folder of this workshop
 
 Examples:
 * [Tasks for Workshop #1](https://github.com/tpolishchuk/java-core-trainings/tree/master/src/main/resources/tasks/workshop_1)
