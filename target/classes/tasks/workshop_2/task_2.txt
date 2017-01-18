@@ -1,0 +1,33 @@
+Firstly, read about quadratic equations and quadratic formula from section "Useful data"
+
+Calculate x values by common quadratic formula. Set a, b, c as arguments in your calculation method
+
+For example:
+
+private double calculateXByQuadraticFormula(int a, int b, int c){
+... your implementation here ...
+}
+
+public static void main(String[] args) {
+   calculateXByQuadraticFormula(1, 8, -5);
+   calculateXByQuadraticFormula(-8, 10, 14);
+   ... etc.
+}
+
+Expected console output:
+
+Calculating x by quadratic formula
+a = 1
+b = 8
+c = -5
+x1 = 0.58
+x2 = -8.58
+
+Calculating x by quadratic formula
+a = -8
+b = 10
+c = 14
+x1 = -0.84
+x2 = 2.09
+
+... etc.

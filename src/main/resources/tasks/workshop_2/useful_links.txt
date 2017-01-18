@@ -1,0 +1,2 @@
+http://www.purplemath.com/modules/quadform.htm - Quadratic formula for task#2
+http://www.java2s.com/Tutorial/Java/0100__Class-Definition/0060__Method-Overloading.htm - Method overloading in short executable examples

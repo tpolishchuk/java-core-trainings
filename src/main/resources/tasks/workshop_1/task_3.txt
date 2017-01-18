@@ -1,0 +1,2 @@
+Write a short method, which takes 0 or 1 as an argument. It should return false if an argument was 0.
+It should return true if an argument was 1. It should display an error if an argument does not equal 0 or 1
