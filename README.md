@@ -31,9 +31,12 @@ Or debug your code:
 Review duties
 =============
 
-Each participant will act as reviewer and should be reviewed each workshop
-You can find file review_duty.txt in your own package for each workshop
-Review duties will be mixed each workshop and review_duty.txt will be added for each participant
-Do not hesitate to exchange information with each other, review and discuss task solutions
+Each participant will act as reviewer and should be reviewed each workshop.
+
+You can find file review_duty.txt in your own package for each workshop.
+
+Review duties will be mixed each workshop and review_duty.txt will be added for each participant.
+
+Do not hesitate to exchange information with each other, review and discuss task solutions.
 
 Have fun :)
