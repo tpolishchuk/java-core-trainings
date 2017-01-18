@@ -1,1 +1,0 @@
-Do the task from lecture "More On Operators And Operator Precedence" (13:11)

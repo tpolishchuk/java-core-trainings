@@ -16,4 +16,4 @@ hs_err_pid*
 .gitignore
 .idea/
 java-core-trainings.iml
-build/
+target/
