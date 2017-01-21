@@ -60,15 +60,15 @@ public class Tasks {
 
     public static void main(String[] args) {
 
-        //task4
+        System.out.println("\n *Task 4*");
         displayResultsOfLogicalOperations(true, true);
         displayResultsOfLogicalOperations(false, true);
         displayResultsOfLogicalOperations(true, false);
         displayResultsOfLogicalOperations(false, false);
 
-        //taskBonus
-        double a = 20;
-        double b = 80;
+        System.out.println("\n *Task Bonus*");
+        double a = 20.0;
+        double b = 80.0;
         reminderLimit(a, b);
     }
 
@@ -81,7 +81,6 @@ public class Tasks {
     //  if the remaining total (#4) is equal to 20 or less
 
     public static void reminderLimit(double a, double b){
-        System.out.println("*Bonus task*");
         double sum = (a + b) * 25;
         double reminder = sum % 40;
         if (reminder <= 20){
