@@ -1,0 +1,5 @@
+Java System class documentation:
+https://docs.oracle.com/javase/7/docs/api/java/lang/System.html
+
+Javadoc for System.currentTimeMillis():
+https://docs.oracle.com/javase/7/docs/api/java/lang/System.html#currentTimeMillis()

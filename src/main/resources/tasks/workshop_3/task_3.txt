@@ -1,0 +1,43 @@
+Before start:
+1. Get acquainted with example in java-core-trainings/src/main/java/examples/RandomUtilsExample.java
+2. Get acquainted with documentation given in useful_links.txt
+
+In this task we will write a mini-simulator of lottery.
+Define as a positive int constant your 'lucky number'.
+Write a method, which generates integer numbers during defined amount of seconds and detects,
+whether random integer number equals your 'lucky number'. You also should define a range of integers for generation.
+If generated number equals 'lucky number', write to console:
+"You won with number " + luckyNumber
+If during defined amount of seconds your 'lucky number' was not equal to any generated number, write to console:
+"Your game was not successful, try again"
+If range for generated integers is set as negative value, write to console:
+"Cannot generate integers from 0 to your value. Please, define positive integer maximum value for generator"
+
+Example:
+
+public class LotterySimulator {
+
+    private static final int luckyNumber = 10;
+
+    public static void main(String[] args) {
+        playLottery(1, 5);
+        playLottery(100, 600);
+        playLottery(-1, 600);
+    }
+
+    private void playLottery(int maximumIntForRandomGenerator, int durationInSeconds){
+    ... your implementation here ...
+    }
+}
+
+Expected console output:
+Your game was not successful, try again
+You won with number 10
+Cannot generate integers from 0 to your value. Please, define positive integer maximum value for generator
+
+
+
+
+
+
+

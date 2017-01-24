@@ -1,0 +1,28 @@
+Imagine that you have a login form with 3 buttons:
+- "Sign in via email", which redirects to user's account page
+- "Sign in via Facebook", which redirects to facebook.com to grab FB session
+- "Sign in via Google Plus", which redirects to google.com to grab Google session
+
+You need to create a method, which uses switch statement, takes button name as argument and tells user where he will be
+redirected.
+
+Example:
+
+private void analyzeRedirect(String buttonName){
+... your implementation here ...
+}
+
+public static void main(String[] args) {
+  analyzeRedirect("Sign in via email");
+  analyzeRedirect("Sign in via Facebook");
+  analyzeRedirect("Sign in via Google Plus");
+  analyzeRedirect("Lorem Ipsum");
+}
+
+Expected console output:
+
+You have pressed "Sign in via email". Wait for redirection to your account page
+You have pressed "Sign in via Facebook". Wait for redirection to Facebook
+You have pressed "Sign in via Google Plus". Wait for redirection to Google
+You have pressed unknown element and system error occurred. Please, contact site administrator
+
