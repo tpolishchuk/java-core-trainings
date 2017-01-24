@@ -1,0 +1,33 @@
+Write a method, which determines the longest word in given sentence.
+If the sentence has two longest words with the same length, just print the last one.
+Do not calculate whitespaces, apostrophes, commas, dashes and dots as a word.
+
+Example:
+
+private void printTheLongestWord(String sentence){
+... your implementation here ...
+}
+
+public static void main(String[] args) {
+  printTheLongestWord("Buy yellow banana!");
+  printTheLongestWord("");
+  printTheLongestWord("I don't need a hair stylist, my pillow gives me a new hairstyle every morning.");
+  printTheLongestWord("The quick brown fox jumps over the lazy dog");
+  printTheLongestWord("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+}
+
+Expected console output:
+
+In the sentence:
+"Buy yellow banana!"
+The longest word is "banana"
+
+In the sentence:
+""
+The longest cannot be calculated, because there is no sentence
+
+In the sentence:
+"I don't need a hair stylist, my pillow gives me a new hairstyle every morning."
+The longest word is "hairstyle"
+
+...
