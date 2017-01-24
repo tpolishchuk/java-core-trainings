@@ -1,0 +1,18 @@
+Before start:
+Read useful_links.txt related to this workshop. It contains an article about SimpleDateFormat and loads of examples
+
+Write a method, which prints today's data to console in given format
+
+private void printCurrentData(String format){
+    ... your implementation here ...
+}
+
+public static void main(String[] args) {
+    printCurrentData("HH:mm:ss");
+    printCurrentData("MM/dd/yy");
+    ...
+}
+
+Expected console output:
+12:55:33
+...
