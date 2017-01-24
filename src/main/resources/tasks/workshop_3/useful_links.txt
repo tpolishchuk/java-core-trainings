@@ -3,3 +3,14 @@ https://docs.oracle.com/javase/7/docs/api/java/lang/System.html
 
 Javadoc for System.currentTimeMillis():
 https://docs.oracle.com/javase/7/docs/api/java/lang/System.html#currentTimeMillis()
+
+Regular Expressions
+http://www.vogella.com/tutorials/JavaRegularExpressions/article.html
+
+SimpleDateFormat
+https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html - documentation
+http://www.java2s.com/Tutorial/Java/0120__Development/0190__SimpleDateFormat.htm - examples
+
+German verbs conjugation
+http://www.pimsleurapproach.com/resources/german/grammar-guides/verb-conjugation/
+

@@ -1,0 +1,23 @@
+Before start:
+Read useful_links.txt related to this workshop. It contains an article about regular expressions.
+Read it fluently just to know which features offers Java for parsing content with regexps
+
+Write a method, which extracts all digits from given string and shows them in console output
+
+private void extractDigitsFromText(String text){
+    ... your implementation here ...
+}
+
+public static void main(String[] args) {
+    extractDigitsFromText("I'm 40-year-old. I have 5 cats and one fish.");
+    extractDigitsFromText("Lorem Ipsum");
+}
+
+Expected console output:
+Text:
+I'm 40-year-old. I have 5 cats and one fish.
+Digits found: [40, 5]
+
+Text:
+Lorem Ipsum
+No digits were found

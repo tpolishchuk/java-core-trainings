@@ -1,0 +1,29 @@
+Write a code, which helps you with the conjugation of German regular verbs
+Article with rules is placed into useful_links.txt
+
+private void conjugateRegularVerb(String verb){
+    ... your implementation here ...
+}
+
+public static void main(String[] args) {
+    conjugateRegularVerb("schreiben");
+    conjugateRegularVerb("schwimmen");
+    ...
+}
+
+Expected console output:
+Verb: schreiben
+ich schreibe
+du schreibst
+er/sie/es schreibt
+wir schreiben
+ihr schreibt
+sie/Sie schreiben
+
+Verb: schwimmen
+ich schwimme
+du schwimmst
+er/sie/es schwimmt
+wir schwimmen
+ihr schwimmt
+sie/Sie schwimmen
