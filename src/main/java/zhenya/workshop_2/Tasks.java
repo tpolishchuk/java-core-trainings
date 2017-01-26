@@ -33,9 +33,9 @@ public class Tasks {
         String result;
         if (value <= 100) {
             result = "Given argument value is less or equals 100";
-        } else if (value > 100 && value <= 200) {
+        } else if ((value > 100) && (value <= 200)) {
             result = "Given argument value is between 100 and 200";
-        } else if (value > 200 && value <= 500) {
+        } else if ((value > 200) && (value <= 500)) {
             result = "Given argument value is between 100 and 200";
         } else {
             result = "Given argument value is more 500";
