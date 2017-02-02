@@ -12,6 +12,8 @@ public class Tasks {
         System.out.println("\n*Task 2*");
         calculateXByQuadraticFormula(1, 8, -5);
         calculateXByQuadraticFormula(-8, 10, 14);
+        calculateXByQuadraticFormula(3, 4, 2);
+        calculateXByQuadraticFormula(9, 12, 4);
 
         System.out.println("\n*Task 3*");
         System.out.println(carDetails("Toyota", "Yaris", 2013, "2"));
@@ -48,14 +50,17 @@ public class Tasks {
     /*Calculate x values by common quadratic formula. Set a, b, c as arguments in your calculation method*/
     private static void calculateXByQuadraticFormula(int a, int b, int c) {
         double d = Math.sqrt(Math.pow(b, 2) - 4 * a * c);
-        double x1 = (-b + d) / (2 * a);
-        double x2 = (-b - d) / (2 * a);
-        System.out.println("Calculating x by quadratic formula\n" +
-                "a = " + a + "\n" +
-                "b = " + b + "\n" +
-                "c = " + c + "\n" +
-                "x1 = " + String.format("%.2f", x1) + "\n" +
-                "x2 = " + String.format("%.2f", x2) + "\n");
+        System.out.println("Calculating x by quadratic formula a = " + a + ", b = " + b + ", c = " + c + ".");
+        if (d>0) {
+            double x1 = (-b + d) / (2 * a);
+            double x2 = (-b - d) / (2 * a);
+            System.out.println("There are two solutions' values: x1 = "+ String.format("%.2f", x1) + " and x2 = " + String.format("%.2f", x2) + "\n");
+        } else if (d==0) {
+            double x1 = (double) (-b) / (2 * a);
+            System.out.println("There is one \"repeated\" solution value: x1 = x2 = " + String.format("%.2f", x1) + "\n");
+        } else {
+            System.out.println("There is no solution\n");
+        }
     }
 
     /*------TASK 3------*/
