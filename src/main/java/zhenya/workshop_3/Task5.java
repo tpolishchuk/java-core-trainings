@@ -5,7 +5,7 @@ import java.util.Calendar;
 
 public class Task5 {
 
-    private static void printCurrentData(String format){
+    private static void printCurrentData(String format) {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat(format);
 

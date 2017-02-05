@@ -8,7 +8,7 @@ public class Task2 {
                     "\"\"\n" +
                     "The longest word cannot be calculated, because there is no sentence \n");
         } else {
-            String[] words=sentence.replaceAll("[\\p{Punct}&&[^']]","").split("\\s+");
+            String[] words = sentence.replaceAll("[\\p{Punct}&&[^']]", "").split("\\s+");
             String longestWord = words[0];
             for (int i = 1; i< words.length; i++){
                 if (longestWord.length() <= words[i].length()){

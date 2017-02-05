@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 
 public class Task4 {
-    private static void extractDigitsFromText(String text){
+    private static void extractDigitsFromText(String text) {
 
         LinkedList<String> numbers = new LinkedList<String>();
 
@@ -16,10 +16,10 @@ public class Task4 {
             numbers.add(m.group());
         }
 
-        if (numbers.isEmpty()){
+        if (numbers.isEmpty()) {
             System.out.println("No digits were found");
         } else {
-            System.out.println("Digits found: "+ numbers);
+            System.out.println("Digits found: " + numbers);
         }
     }
 
