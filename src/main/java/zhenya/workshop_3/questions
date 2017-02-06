@@ -1,8 +1,32 @@
 project settings in intro - why he does it?
+
+- Java 8 has some new features, which will not be compiled, if your Idea sets Java 7 for default compilation.
+Course overviews Java 8, so it's necessary to set SDK 1.8 to avoid problems with tasks compilation
+
 when I use switch? two "if" arleady a sign?
+
+- Switch is more readable and it's more easy to debug switch than several if's
+
 can I use condition in switch? ex. D>0
+
+- No, for conditions use if-else
+
 main at the end or at the beginning of the code?
+
+- Better at the beginning, but it's just a recommendation
+
 how to define string and do I need to do it, ex. String longestWord = "";
-    private  void extractDigitsFromText(String text){ - I have to add static
+
+- Usually you don't need to define empty string. Nevertheless, if it's necessary, there are 2 options:
+String longestWord = "";
+String longestWord = StringUtils.EMPTY;
+
+private  void extractDigitsFromText(String text){ - I have to add static
+- You need to call always only static methods from another static methods.
+Currently our task methods do some helper actions and do not represent features of TaskX.class.
+Later we will learn basics of classes and start to use non-static methods
+There is a good bunch of recommendations when to use static methods:
+http://www.programmingsimplified.com/java/source-code/java-static-method-program
+http://stackoverflow.com/questions/2671496/java-when-to-use-static-methods
 
 
