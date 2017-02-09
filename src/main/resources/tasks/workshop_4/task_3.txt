@@ -1,0 +1,81 @@
+Task 3: Characters interaction
+
+In this task we will try on practice object fields amendment
+
+Before start:
+Perform Task#2
+
+Task:
+1. In your package for workshop#4 create a class named Game
+
+It should contain:
+1. public static void main() method, as usual, where we will play a game
+2. private static void method playFightRound(). This method should:
+ - take Character character1 as argument
+ - take Character character2 as argument
+ - take int maximumCriticalDamage as argument
+ - throw an exception if character1 and character2 have the same character class. Put in a message something like:
+ "%CLASS_NAME% cannot attack %CLASS_NAME%!"
+ - get damage by character1. Damage value should be generated randomly from 0 to maximumCriticalDamage value
+ - get damage by character2. Damage value should be generated randomly from 0 to maximumCriticalDamage value
+ - print to console "%CHARACTER1_NAME% is dead" if character1 is not alive anymore
+ - print to console "%CHARACTER2_NAME% is dead" if character2 is not alive anymore
+3. private static void method defineWinner(). This method should:
+ - take Character character1 as argument
+ - take Character character2 as argument
+ - take int winnerBonus as argument
+ - give bonus with increaseExperience() to character1, if it's alive and character2 is dead
+ - give bonus with increaseExperience() to character2, if it's alive and character1 is dead
+ - print to console "Both characters are dead. Nobody receives winner bonus" if both characters are dead
+4. private static void method fightToDeath(). This method should:
+ - take Character character1 as argument
+ - take Character character2 as argument
+ - take int maximumCriticalDamage as argument
+ - take int winnerBonus as argument
+ - print to console "Fight starts! %CHARACTER1_NAME% vs %CHARACTER2_NAME%"
+ - print to console "Cannot start the battle, because at least one of opponents is still dead" if at least one of characters
+ is not alive. After it method should exit from execution and not be continued
+ - in an infinite loop while(true), play fight round and if both characters are alive.
+ If at least one of characters is dead, define winner and exit loop
+
+2. Put the following code into your main class and execute it:
+public static void main(String[] args) {
+        Character alice = new Character("Alice", CharacterClass.MONK);
+        Character bob = new Character("Bob", CharacterClass.BARBARIAN);
+
+        fightToDeath(alice, bob, 50, 120);
+        alice.healToMaximum();
+        bob.healToMaximum();
+
+        fightToDeath(alice, bob, 50, 120);
+        alice.healToMaximum();
+        bob.healToMaximum();
+}
+
+you should see something like that in your console:
+
+Fight starts! Alice vs Bob
+Character Alice received damage 45. Health left: 55
+Character Bob received damage 25. Health left: 75
+Character Alice received damage 42. Health left: 13
+Character Bob received damage 22. Health left: 53
+Character Alice received damage 19. Health left: -6
+Character Bob received damage 44. Health left: 9
+Alice is dead
+Bob got 120 experience points. Now experience is 120 points
+Congratulations, Bob, you've reached 1 level!
+
+Fight starts! Alice vs Bob
+Character Alice received damage 38. Health left: 62
+Character Bob received damage 4. Health left: 96
+Character Alice received damage 2. Health left: 60
+Character Bob received damage 12. Health left: 84
+Character Alice received damage 18. Health left: 42
+Character Bob received damage 44. Health left: 40
+Character Alice received damage 37. Health left: 5
+Character Bob received damage 28. Health left: 12
+Character Alice received damage 23. Health left: -18
+Character Bob received damage 48. Health left: -36
+Alice is dead
+Bob is dead
+Both characters are dead. Nobody receives winner bonus
