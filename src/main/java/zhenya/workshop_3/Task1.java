@@ -2,24 +2,31 @@ package zhenya.workshop_3;
 
 public class Task1 {
 
-    public static String buttonEmail = "Sign in via email";
-    public static String buttonFB = "Sign in via Facebook";
-    public static String buttonGoogle = "Sign in via Google Plus";
+    private static String buttonEmail = "Sign in via email";
+    private static String buttonFB = "Sign in via Facebook";
+    private static String buttonGoogle = "Sign in via Google Plus";
 
-    private static void clickEmail(){
+    public static void main(String[] args) {
+        analyzeRedirect(buttonEmail);
+        analyzeRedirect(buttonFB);
+        analyzeRedirect(buttonGoogle);
+        analyzeRedirect("Lorem Ipsum");
+    }
+
+    private static void clickEmail() {
         System.out.println("You have pressed \"Sign in via email\". Wait for redirection to your account page");
     }
 
-    private static void clickFB(){
+    private static void clickFB() {
         System.out.println("You have pressed \"Sign in via Facebook\". Wait for redirection to Facebook");
     }
 
-    private static void clickGoogle(){
+    private static void clickGoogle() {
         System.out.println("You have pressed \"Sign in via Google Plus\". Wait for redirection to Google");
     }
 
 
-    private static void clickUnknown(){
+    private static void clickUnknown() {
         System.out.println("You have pressed unknown element and system error occurred. Please, contact site administrator");
     }
 
@@ -39,13 +46,4 @@ public class Task1 {
                 break;
         }
     }
-
-
-    public static void main(String[] args) {
-        analyzeRedirect(buttonEmail);
-        analyzeRedirect(buttonFB);
-        analyzeRedirect(buttonGoogle);
-        analyzeRedirect("Lorem Ipsum");
-    }
-
 }

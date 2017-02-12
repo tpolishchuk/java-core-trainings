@@ -21,7 +21,7 @@ public class Task3 {
             long startTime = System.currentTimeMillis(); //fetch starting time
             int generatedNumber;
 
-            while (false || (System.currentTimeMillis() - startTime) < durationInSeconds * 1000) {
+            while ((System.currentTimeMillis() - startTime) < (durationInSeconds * 1000)) {
                 generatedNumber = RandomUtils.nextInt(maximumIntForRandomGenerator);
                 if (generatedNumber == luckyNumber) {
                     won = true;
