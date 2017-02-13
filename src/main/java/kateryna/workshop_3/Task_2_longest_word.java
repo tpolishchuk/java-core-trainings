@@ -6,7 +6,7 @@ package kateryna.workshop_3;
 public class Task_2_longest_word {
 
     private static void printTheLongestWord(String sentence){
-        if (sentence == "") {
+        if (sentence.equals("")) {
             System.out.println("In the sentence:\n" + sentence + "\nThe longest cannot be calculated, because there is no sentence\n");
         }
         else {
