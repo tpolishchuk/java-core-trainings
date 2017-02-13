@@ -3,8 +3,18 @@ package zhenya.workshop_4;
 import java.util.Random;
 
 public class Game {
-    public static void main(){
-        playFightRound("BARBARIAN", "BARBARIAN", 40);
+
+    public static void main(String[] args){
+        Character alice = new Character("Alice", CharacterClass.MONK);
+        Character bob = new Character("Bob", CharacterClass.BARBARIAN);
+
+        fightToDeath(alice, bob, 50, 120);
+        alice.healToMaximum();
+        bob.healToMaximum();
+
+        fightToDeath(alice, bob, 50, 120);
+        alice.healToMaximum();
+        bob.healToMaximum();
     }
 
 // 2. private static void method playFightRound(). This method should:
