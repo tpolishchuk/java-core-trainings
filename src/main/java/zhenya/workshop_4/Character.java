@@ -4,7 +4,7 @@ public class Character {
 
     //1. private static final int HEALTH_MAXIMUM. It is the maximum value of health for yor character.
     //It will be needed in method for healing your character
-    private static final int HEALTH_MAXIMUM = 100;
+    private static final int HEALTH_MAXIMUM = 10;
 
     //2. string field 'nickname' with private access modifier
     private String nickname;
@@ -80,6 +80,8 @@ public class Character {
     this.experience = 0;
     this.isAlive = true;*/
     public Character(String nickname, CharacterClass characterClass){
+        this.nickname = nickname;
+        this.characterClass = characterClass;
         this.level = 0;
         this.health = HEALTH_MAXIMUM;
         this.experience = 0;
