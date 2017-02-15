@@ -1,0 +1,16 @@
+1. What’s the difference between equals() and ==?
+Link: http://www.programmerinterview.com/index.php/java-questions/java-whats-the-difference-between-equals-and/
+Example to be executed: src/main/java/examples/ComparisonExample.java
+
+2. How to Override equals() and hashcode() Method in Java?
+Link: http://crunchify.com/how-to-override-equals-and-hashcode-method-in-java/
+Example to be executed: src/main/java/examples/EqualsAndHashCodeOverridingExample.java
+
+3. Java Naming conventions
+http://www.javatpoint.com/java-naming-conventions
+
+4. Access Modifiers in Java
+http://www.javatpoint.com/access-modifiers
+
+5. Simple Java compilation example
+https://en.wikibooks.org/wiki/Java_Programming/Compilation
