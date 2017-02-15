@@ -89,7 +89,7 @@ public class Game {
 
         System.out.println("Fight starts! " + character1.getNickname() + " vs " + character2.getNickname());
 
-        if (character1.getCharacterClass() == character2.getCharacterClass()) {
+        if (character1.getCharacterClass().equals(character2.getCharacterClass())) {
             System.out.println(character1.getCharacterClass() + " cannot attack " + character2.getCharacterClass() + "!\n");
             return;
         }
