@@ -1,0 +1,2 @@
+Enums:
+http://tutorials.jenkov.com/java/enums.html

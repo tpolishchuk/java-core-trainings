@@ -1,0 +1,8 @@
+Task 1: Enums
+
+Before start:
+Read workshop_4/useful_links.txt information regarding Enums
+
+Task:
+In your package for workshop#4 create a Enum named CharacterClass
+Put here at least 3 gaming character classes you prefer (E.g. BARBARIAN, WIZARD, MONK)
