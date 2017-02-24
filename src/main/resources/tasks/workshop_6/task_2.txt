@@ -1,0 +1,7 @@
+Task 2: Code style
+
+1. Read again links from previous workshops about
+ - Java Naming conventions: http://www.javatpoint.com/java-naming-conventions
+ - Access Modifiers in Java: http://www.javatpoint.com/access-modifiers
+2. Review all of your code from workshop_1 till workshop_2 and refactor your code in accordance with Java Naming
+conventions and access modifiers purpose

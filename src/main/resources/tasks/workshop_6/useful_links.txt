@@ -1,0 +1,9 @@
+1. Java Naming conventions
+http://www.javatpoint.com/java-naming-conventions
+
+2. Access Modifiers in Java
+http://www.javatpoint.com/access-modifiers
+
+3. GitHub basics course
+https://www.udemy.com/git-started-with-github/learn/v4/content
+
