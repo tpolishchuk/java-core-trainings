@@ -1,0 +1,79 @@
+Task 1: Random values generators
+
+1. In your package for workshop 7 create a class named RandomValuesGenerator
+RandomValuesGenerator should contain the following data:
+- constructor, which prints to console "RandomValuesGenerator was created". Avoid hardcoding of 'RandomValuesGenerator'
+in yor message, better get class name as it it shown in lecture 51
+- protected void method generateRandomStuff(), which takes int objectsAmount as an argument. This method should produce the message:
+'Unable to create %d unknown arguments', where %d will be replaced with objectsAmount value
+
+2. In your package for workshop 7 create a class named Cat
+Cat should contain the following data:
+- String field name;
+- int field age;
+- constructor, which takes name and age as arguments
+- Overridden public String toString(), which returns Cat as String. E.g.
+Cat{name='%s', age='%d'}
+
+3. In your package for workshop 7 create a class named RandomIntegersGenerator, which extends RandomValuesGenerator
+RandomIntegersGenerator should contain its own implementation of generateRandomStuff() method and print
+to console random Integers. Amount of Integers is defined by objectsAmount argument.
+
+4. In your package for workshop 7 create a class named RandomStringsGenerator, which extends RandomValuesGenerator
+RandomStringsGenerator should contain its own implementation of generateRandomStuff() method and print
+to console random Strings. Amount of Strings is defined by objectsAmount argument.
+
+5. In your package for workshop 7 create a class named RandomCatsGenerator, which extends RandomValuesGenerator
+RandomCatsGenerator should contain its own implementation of generateRandomStuff() method and print
+to console random Cats. Amount of Cats is defined by objectsAmount argument.
+
+6. In your package for workshop 7 create a class named RandomHamstersGenerator, which extends RandomValuesGenerator
+
+7. In your package for workshop 7 create a class named Executor
+Executor should contain main method, which contains the following objects
+
+- RandomIntegersGenerator
+- RandomStringsGenerator
+- RandomCatsGenerator
+- RandomHamstersGenerator
+
+and all of the objects should call generateRandomStuff() method.
+
+Example:
+
+public static void main(String[] args) {
+        RandomIntegersGenerator randomIntegersGenerator = new RandomIntegersGenerator();
+        randomIntegersGenerator.generateRandomStuff(5);
+
+        RandomStringsGenerator randomStringsGenerator = new RandomStringsGenerator();
+        randomStringsGenerator.generateRandomStuff(5);
+
+        RandomCatsGenerator randomCatsGenerator = new RandomCatsGenerator();
+        randomCatsGenerator.generateRandomStuff(2);
+
+        RandomHamsterGenerator randomHamsterGenerator = new RandomHamsterGenerator();
+        randomHamsterGenerator.generateRandomStuff(1);
+}
+
+Console output:
+
+RandomIntegersGenerator was created
+583565303
+1702971340
+886500382
+927113370
+805095902
+
+RandomStringsGenerator was created
+26dl899gl5mpmljgase4p2cl
+sd140vjkefcb8jqh2hrlcc
+ppncofas7vhraadjlsg9afsnv
+1njcvpcm
+eo03s0vvmcb8atuihm5m
+
+RandomCatsGenerator was created
+Cat{name='Bzuuut', age='3'}
+Cat{name='Gamskgns', age='15'}
+
+RandomHamsterGenerator was created
+Unable to generate unknown objects

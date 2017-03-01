@@ -1,0 +1,42 @@
+Task 2: equals() and hashCode() overriding
+
+Before:
+Read on more time workshop_5/useful_links.txt, section "How to Override equals() and hashcode() Method in Java?"
+
+Imagine, that you have a small stock of tables. Each table has its own unique stock number, name and price.
+So, two similar wood tables with the same model name and price are equal to each other despite the fact that they have
+two different stockNumbers in database. They are made from the same material, they are the same by width and height
+and they look similarly
+
+1. In your package for workshop 7 create a class named Table.
+Table should contain:
+- int field stockNumber;
+- String field title;
+- int field price;
+- constructor, which takes stockNumber, title, price as arguments;
+- overridden method equals(), which compares Tables only by name and price;
+- overridden method hashCode(), which generates object hash code only by name and price;
+- overridden method toString(), which returns Table as a String. E.g.
+Table{stockNumber=%d, title='%s', price=%d}
+
+2. In your package for workshop 7 create a class named Executor.
+
+It should contain main() method, which will compare different Table objects and print to console the result of
+comparison. E.g.
+
+public static void main(String[] args) {
+        Table table1 = new Table(10001, "BEKANT", 519);
+        Table table2 = new Table(10002, "BEKANT", 519);
+        Table table3 = new Table(10003, "BJURSTA", 199);
+        Table table4 = new Table(10004, "BJURSTA", 465);
+
+        System.out.println(String.format("%s equals %s => %s", table1.toString(), table2.toString(), table1.equals(table2)));
+        System.out.println(String.format("%s equals %s => %s", table2.toString(), table3.toString(), table2.equals(table3)));
+        System.out.println(String.format("%s equals %s => %s", table3.toString(), table4.toString(), table3.equals(table4)));
+}
+
+Console output:
+
+Table{stockNumber=10001, title='BEKANT', price=519} equals Table{stockNumber=10002, title='BEKANT', price=519} => true
+Table{stockNumber=10002, title='BEKANT', price=519} equals Table{stockNumber=10003, title='BJURSTA', price=199} => false
+Table{stockNumber=10003, title='BJURSTA', price=199} equals Table{stockNumber=10004, title='BJURSTA', price=465} => false
