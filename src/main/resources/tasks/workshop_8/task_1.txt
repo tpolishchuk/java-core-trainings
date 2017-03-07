@@ -1,0 +1,35 @@
+Task 1: Console loggers
+
+In this task you will not get exact instructions how to build your entities. Feel free to design your task using all of
+knowledge you've gained in previous 7 workshops
+
+1. For current task you need to learn how to color console output:
+https://www.google.de/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=java+sout+with+different+colours&*
+
+2. Create class Console. It will contain main method, where you will check your entities
+
+The main purpose of the task is to create 3 different loggers: error logger, info logger and debug logger.
+Each logger will print logs in accordance with its style. Feel free to set any style you want
+
+3. Create enum LogType with following data: ERROR, INFO and DEBUG
+
+4. Create class LoggerStyle. It should contain textColor, backgroundColor and reset color constant
+Define which fields need getters and setters. Think about access modifiers
+
+5. Create class DateTimeHelper. Is should contain only one method which returns current time in defined format.
+Remember Task#5 from Workshop#3
+
+6. Create class Logger. It should contain such fields as:
+ - LoggerStyle loggerStyle;
+ - LogType logType;
+ - String simpleDateFormat;
+and method print(), which will print your message in defined style. Choose any format you want. For example:
+[Hours:Minutes:Seconds] LogType: Message
+Think about managing the situations if loggerStyle, logType or simpleDate format are not set
+
+7. Create classes for debug logger, info logger and error logger inherited from Logger. Define necessary constructors and
+fields. Think whether any of this information should be shown to end user. Override methods if necessary
+
+8. Use your loggers in Console.
+Approximate result is attached in Console.png
+
