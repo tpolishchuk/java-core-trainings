@@ -1,10 +1,6 @@
 package zhenya.workshop_5;
 
-public class Browser extends BasePage {
-
-    public Browser(String partialURL) {
-        super(partialURL);
-    }
+public class Browser {
 
     public static void main(String[] args) {
         LoginPage loginPage = new LoginPage("/login");
@@ -20,7 +16,5 @@ public class Browser extends BasePage {
         catalogPage.openPage();
         catalogPage = new CatalogPage("/sellcar");
         catalogPage.openPage();
-
     }
-
 }

@@ -10,5 +10,4 @@ public class LoginPage extends BasePage {
     public void showBody(){
         System.out.println("Login form is shown");
     }
-
 }

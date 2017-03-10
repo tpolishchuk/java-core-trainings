@@ -6,7 +6,7 @@ public class BasePage {
 
     String partialURL;
 
-    public BasePage(String partialURL){
+    public BasePage(String partialURL) {
         this.partialURL = partialURL;
     }
 
@@ -17,7 +17,6 @@ public class BasePage {
     private String getPartialURL() {
         return partialURL;
     }
-
 
     private void getCurrentURL(String partialURL) {
         setPartialURL(partialURL);
