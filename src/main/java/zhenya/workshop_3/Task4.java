@@ -23,7 +23,8 @@ public class Task4 {
         }
         if (numbers.isEmpty()) {
             System.out.println("No digits were found");
-        } else {
+        }
+        else {
             System.out.println("Digits found: " + numbers);
         }
     }

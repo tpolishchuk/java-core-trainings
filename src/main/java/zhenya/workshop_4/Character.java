@@ -91,7 +91,7 @@ public class Character {
     //    10. public void method healToMaximum(). This method should:
     //    - set 'isAlive' field to true
     //    - increase health to maximum level
-    public void healToMaximum() {
+    protected void healToMaximum() {
         this.isAlive = true;
         this.health = HEALTH_MAXIMUM;
     }
@@ -100,7 +100,7 @@ public class Character {
     //    - take int argument 'damage'
     //    - decrease health with a damage value
     //    - set 'isAlive' field to false if character has no positive health points left
-    public void getDamage(int damage) {
+    protected void getDamage(int damage) {
         health -= damage;
         if (health <= 0) {
             isAlive = false;
@@ -111,7 +111,7 @@ public class Character {
     //    12. public void increaseLevel(). This method should:
     //    - update 'level' field of character object
     //    - print to console "Congratulations, %CHARACTER_NICKNAME%, you've reached %CHARACTER_LEVEL% level!"
-    public void increaseLevel(int newLevel) {
+    private void increaseLevel(int newLevel) {
         level = newLevel;
         System.out.println("Congratulations, " + nickname + ", you've reached " + level + " level!");
     }
@@ -121,10 +121,10 @@ public class Character {
     //    - increase character's experience with the value of experiencePoints
     //    - print to condole "%CHARACTER_NICKNAME% got %EXPERIENCE_BONUS_POINTS% experience points. Now experience is %CHARACTER_EXPERIENCE% points"
     //    - increase character level in accordance with level table from beginning of this task
-    public void increaseExperience(int experiencePoints) {
+    protected void increaseExperience(int experiencePoints) {
         experience += experiencePoints;
-        System.out.println(this.nickname + " got " + experiencePoints + " experience points. Now experience is " + experience + " points");
-
+        System.out.println(
+                this.nickname + " got " + experiencePoints + " experience points. Now experience is " + experience + " points");
         increaseLevel(experience / 100);
     }
 }

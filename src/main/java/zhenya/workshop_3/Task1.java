@@ -25,7 +25,6 @@ public class Task1 {
         System.out.println("You have pressed \"Sign in via Google Plus\". Wait for redirection to Google");
     }
 
-
     private static void clickUnknown() {
         System.out.println("You have pressed unknown element and system error occurred. Please, contact site administrator");
     }

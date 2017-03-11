@@ -20,7 +20,6 @@ public class Tasks {
         System.out.println(carDetails(2015, "Toyota", "Auris", "Ed.124"));
         System.out.println(carDetails("Toyota", "RAV4", "v15"));
         System.out.println(carDetails("Toyota", "Camry", 2017));
-
     }
 
     /*------TASK 1------*/
@@ -29,36 +28,39 @@ public class Tasks {
             - if argument is between 100 and 200, write to user "Given argument value is between 100 and 200"
             - if argument is between 200 and 500, write to user "Given argument value is between 200 and 500"
             - if argument > 500, write to user "Given argument value is more 500"*/
-
-
     private static void analyzeGivenIntValue(int value) {
         String result;
         if (value <= 100) {
             result = "Given argument value is less or equals 100";
-        } else if ((value > 100) && (value <= 200)) {
+        }
+        else if ((value > 100) && (value <= 200)) {
             result = "Given argument value is between 100 and 200";
-        } else if ((value > 200) && (value <= 500)) {
+        }
+        else if ((value > 200) && (value <= 500)) {
             result = "Given argument value is between 100 and 200";
-        } else {
+        }
+        else {
             result = "Given argument value is more 500";
         }
         System.out.println("Argument value: " + value + "\n" + result);
     }
-
 
     /*------TASK 2------*/
     /*Calculate x values by common quadratic formula. Set a, b, c as arguments in your calculation method*/
     private static void calculateXByQuadraticFormula(int a, int b, int c) {
         double d = Math.sqrt(Math.pow(b, 2) - 4 * a * c);
         System.out.println("Calculating x by quadratic formula a = " + a + ", b = " + b + ", c = " + c + ".");
-        if (d>0) {
+        if (d > 0) {
             double x1 = (-b + d) / (2 * a);
             double x2 = (-b - d) / (2 * a);
-            System.out.println("There are two solutions' values: x1 = "+ String.format("%.2f", x1) + " and x2 = " + String.format("%.2f", x2) + "\n");
-        } else if (d==0) {
+            System.out.println("There are two solutions' values: x1 = " + String.format("%.2f", x1) + " and x2 = " +
+                               String.format("%.2f", x2) + "\n");
+        }
+        else if (d == 0) {
             double x1 = (double) (-b) / (2 * a);
             System.out.println("There is one \"repeated\" solution value: x1 = x2 = " + String.format("%.2f", x1) + "\n");
-        } else {
+        }
+        else {
             System.out.println("There is no solution\n");
         }
     }

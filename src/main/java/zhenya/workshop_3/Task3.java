@@ -15,8 +15,10 @@ public class Task3 {
 
     private static void playLottery(int maximumIntForRandomGenerator, int durationInSeconds) {
         if (maximumIntForRandomGenerator < 0) {
-            System.out.println("Cannot generate integers from 0 to your value. Please, define positive integer maximum value for generator");
-        } else {
+            System.out.println(
+                    "Cannot generate integers from 0 to your value. Please, define positive integer maximum value for generator");
+        }
+        else {
             boolean won = false;
             long startTime = System.currentTimeMillis(); //fetch starting time
             int generatedNumber;
@@ -34,5 +36,4 @@ public class Task3 {
             }
         }
     }
-
 }
