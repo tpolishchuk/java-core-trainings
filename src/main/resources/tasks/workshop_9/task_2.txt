@@ -1,0 +1,6 @@
+Task#2: Alphabetic Sorting
+
+Fill in an array of Strings with 10 random car brands. Print this array to console in unsorted order as it is.
+Sort array members alphabetically from A to Z and print to console in sorted order.
+
+Arrays.sort() and Collections.sort() are prohibited for solution implementation :)

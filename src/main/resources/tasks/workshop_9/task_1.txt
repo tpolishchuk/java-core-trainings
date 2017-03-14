@@ -1,0 +1,60 @@
+Task#1: Numbers game
+
+In scope of this task you will write simple console text game with the following rules:
+Players amount: 2. You and bot
+Common concept:
+You are playing with bot N rounds. Each round:
+- You choose random number from 0 to 20. Bot generates random number from 0 to 20
+- You choose number first, only then bot generates its number
+- If you type number more than maximum number in range, you fail this round automatically, bot wins
+- If your numbers are equal, nobody wins
+- If the difference between your numbers is more than 5, nobody wins
+- If bot has chosen a number, which is more than your and difference between your numbers is 5 or less, bot wins
+- If you have chosen a number, which is more than bot's number and difference between your numbers is 5 or less,
+you win
+
+Write your own implementation of this game using materials we've already learned.
+Example of game log is attached in workshop_9/task_1_output_example.txt
+
+As a tip, here is structure draft of classes I've used for implementation. Feel free to use your own:
+
+1. Player.java:
+   - field: String name
+   - field: boolean[] scoreTable; If player won round - put here true as array member, if lost - put false
+   - constructor: Player(String name);
+   - method: String getName();
+   - method: void initScoreTable(int roundsAmount);
+   - method: void fillInScoreTable(int roundNumber, boolean isWinner);
+   - method: int getWinsAmountFromScoreTable();
+
+2. Bot.java:
+   - extends Player.java;
+   - constructor: Bot(String name);
+   - method: int typeRandomInt(int range);
+
+3. RealPerson.java:
+   - extends Player.java;
+   - constructor: RealPerson(String name);
+   - field: Scanner scanner;
+   - method: int typeRandomInt();
+
+4. Game.java:
+   - method: public static void main(String[] args);
+   - private static final int ROUNDS_AMOUNT = 5; You can change it as you wish
+   - private static final int RANGE = 20; Range of numbers generation from 0 to 20. You can change it as you wish
+   - method: void playGame(RealPerson person, Bot bot, int rounds, int range);
+   - method: void playRound(RealPerson person, Bot bot, int roundNumber, int range);
+   - method: void defineWinner(RealPerson person, Bot bot);
+
+   Main method example:
+
+   public static void main(String[] args) {
+        Bot bot = new Bot("Bobby");
+        RealPerson person = new RealPerson("John");
+
+        bot.initScoreTable(ROUNDS_AMOUNT);
+        person.initScoreTable(ROUNDS_AMOUNT);
+
+        playGame(person, bot, ROUNDS_AMOUNT, RANGE);
+        defineWinner(person, bot);
+   }
