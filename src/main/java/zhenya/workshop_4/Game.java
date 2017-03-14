@@ -36,10 +36,7 @@ public class Game {
     // - get damage by character2. Damage value should be generated randomly from 0 to maximumCriticalDamage value
     // - print to console "%CHARACTER1_NAME% is dead" if character1 is not alive anymore
     // - print to console "%CHARACTER2_NAME% is dead" if character2 is not alive anymore
-
-
     private static void playFightRound(Character character1, Character character2, int maximumCriticalDamage) {
-
         Random random = new Random();
         int damage = random.nextInt(maximumCriticalDamage) + 1;
 
@@ -86,7 +83,6 @@ public class Game {
     // - in an infinite loop while(true), play fight round and if both characters are alive.
     //    If at least one of characters is dead, define winner and exit loop
     private static void fightToDeath(Character character1, Character character2, int maximumCriticalDamage, int winnerBonus) {
-
         System.out.println("Fight starts! " + character1.getNickname() + " vs " + character2.getNickname());
 
         if (character1.getCharacterClass().equals(character2.getCharacterClass())) {
