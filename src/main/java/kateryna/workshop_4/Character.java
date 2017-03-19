@@ -7,7 +7,7 @@ public class Character {
 
 //    1. private static final int HEALTH_MAXIMUM. It is the maximum value of health for yor character.
 //    It will be needed in method for healing your character
-    private static final int HEALTH_MAXIMUM = 1000;
+    private static final int HEALTH_MAXIMUM = 100;
 
 //    2. string field 'nickname' with private access modifier
     private String nickname;
@@ -54,4 +54,70 @@ public class Character {
     public boolean isAlive() {return isAlive;}
 
     public void setAlive(boolean alive) {isAlive = alive;}
+
+//    9. Constructor, which takes only 2 arguments: String nickname, CharacterClass characterClass. Other fields should be
+//    initialized in the following way in constructor:
+//            this.level = 0;
+//            this.health = HEALTH_MAXIMUM;
+//            this.experience = 0;
+//            this.isAlive = true;
+
+    public Character (String nickname, CharacterClass characterClass) {
+        this.level = 0;
+        this.health = HEALTH_MAXIMUM;
+        this.experience = 0;
+        this.isAlive = true;
+        this.nickname = nickname;
+        this.characterClass = characterClass;
+    }
+
+//    10. public void method healToMaximum(). This method should:
+//            - set 'isAlive' field to true
+//            - increase health to maximum level
+
+    public void healToMaximum() {
+        this.isAlive = true;
+        this.health = HEALTH_MAXIMUM;
+    }
+
+//    11. public void method getDamage(). This method should:
+//            - take int argument 'damage'
+//            - decrease health with a damage value
+//            - set 'isAlive' field to false if character has no positive health points left
+
+    public void getDemage(int damage) {
+        this.health = this.health - damage;
+        if (this.health <= 0) {
+            this.isAlive = false;
+        }
+        System.out.println("Character " + this.nickname + " received damage " + damage + ". Health left: " + this.health);
+    }
+
+//    12. public void increaseLevel(). This method should:
+//            - update 'level' field of character object
+//            - print to console "Congratulations, %CHARACTER_NICKNAME%, you've reached %CHARACTER_LEVEL% level!"
+
+    public void increaseLevel() {
+        int oldLevel = this.level;
+        this.level = this.experience / 100;
+        if (oldLevel != this.level) {
+            System.out.println("Congratulations, " + this.nickname + ", you've reached " + this.level + " level!");
+        }
+    }
+
+//    13. public void method increaseExperience(). This method should:
+//            - take int argument 'experiencePoints'
+//            - increase character's experience with the value of experiencePoints
+//            - print to condole "%CHARACTER_NICKNAME% got %EXPERIENCE_BONUS_POINTS% experience points.
+//              Now experience is %CHARACTER_EXPERIENCE% points"
+//            - increase character level in accordance with level table from beginning of this task
+
+    public void increaseExperience(int experiencePoints) {
+        this.experience = this.experience + experiencePoints;
+        System.out.println(this.nickname + " got " + experiencePoints + " experience points. Now experience is " +
+                this.experience + " points");
+        this.increaseLevel();
+    }
+
+
 }
