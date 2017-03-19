@@ -1,0 +1,33 @@
+Game starts now! John vs bot Bobby
+Rounds: 5
+
+Round 0
+John, please, enter your number
+16
+Bobby chose number 12
+John is winner in this round
+
+Round 1
+John, please, enter your number
+17
+Bobby chose number 17
+Nobody won. Numbers are equal
+
+Round 2
+John, please, enter your number
+31
+Cheater detected! John loses, Bobby wins
+
+Round 3
+John, please, enter your number
+1
+Bobby chose number 4
+Bobby is winner in this round
+
+Round 4
+John, please, enter your number
+13
+Bobby chose number 13
+Nobody won. Numbers are equal
+
+Game result: Bobby is a winner!

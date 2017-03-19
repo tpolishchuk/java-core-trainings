@@ -1,0 +1,62 @@
+Task 3: Catalog page creation
+
+Before start:
+1. Perform Task#2 or at least Task#1
+
+Task:
+1. In your package for workshop#5 create a class named CatalogPage
+Access modifiers are intentionally not defined here as well as in Task #1 and Task#2
+It should contain:
+1. Inheritance from BasePage
+2. Implementation, which allows to open page with the following information
+- full URL user is visiting
+- return from method if partialUrl is not equal /cars, /motorcycles, /commercial-vehicles or /all with appropriate error
+  message to user
+- message, that page header is shown
+- message, that cars catalog is shown if user visits /cars page OR
+  message, that motorcycles catalog is shown if user visits /motorcycles page OR
+  message, that commercial vehicles catalog is shown if user visits /commercial-vehicles page OR
+  message, that all vehicles catalog is shown if user visits /all page
+- message, that page footer is shown
+
+2. In your package for workshop#5 create a class named Browser, if it doesn't exist
+It should contain:
+1. public static void main() method, as usual, where we will 'observe' pages
+2. Put the following code into your main class and execute it:
+public static void main(String[] args) {
+        CatalogPage catalogPage = new CatalogPage("/cars");
+        catalogPage.openPage();
+        catalogPage = new CatalogPage("/motorcycles");
+        catalogPage.openPage();
+        catalogPage = new CatalogPage("/commercial-vehicles");
+        catalogPage.openPage();
+        catalogPage = new CatalogPage("/all");
+        catalogPage.openPage();
+        catalogPage = new CatalogPage("/sellcar");
+        catalogPage.openPage();
+}
+
+you should see something like that in your console:
+
+Opening URL http://www.buycarshere.com/cars
+Page header is shown
+Cars catalog is shown
+Page footer is shown
+
+Opening URL http://www.buycarshere.com/motorcycles
+Page header is shown
+Motorcycles catalog is shown
+Page footer is shown
+
+Opening URL http://www.buycarshere.com/commercial-vehicles
+Page header is shown
+Commercial vehicles catalog is shown
+Page footer is shown
+
+Opening URL http://www.buycarshere.com/all
+Page header is shown
+All vehicles are shown in catalog
+Page footer is shown
+
+Opening URL http://www.buycarshere.com/sellcar
+Cannot handle given partial url /sellcar, page will not be shown

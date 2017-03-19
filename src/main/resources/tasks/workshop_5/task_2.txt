@@ -1,0 +1,32 @@
+Task 2: Login page creation
+
+Before start:
+1. Perform Task#1
+
+Task:
+1. In your package for workshop#5 create a class named LoginPage
+Access modifiers are intentionally not defined here as well as in Task #1
+It should contain:
+1. Inheritance from BasePage
+2. Implementation, which allows to open page with the following information
+- full URL user is visiting
+- message, that page header is shown
+- message, that login form is shown
+- message, that page footer is shown
+
+2. In your package for workshop#5 create a class named Browser
+It should contain:
+1. public static void main() method, as usual, where we will 'observe' pages
+
+2. Put the following code into your main class and execute it:
+public static void main(String[] args) {
+        LoginPage loginPage = new LoginPage("/login");
+        loginPage.openPage();
+}
+
+you should see something like that in your console:
+
+Opening URL http://www.buycarshere.com/login
+Page header is shown
+Login form is shown
+Page footer is shown
