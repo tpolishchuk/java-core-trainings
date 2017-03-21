@@ -1,0 +1,15 @@
+Task#5
+
+- Generate an ArrayList of first 12 Fibonacci Numbers (formulas: https://en.wikipedia.org/wiki/Fibonacci_number)
+- Generate the second ArrayList of 100 random integers in range from 0 to 150
+- Count how much Fibonacci numbers contains the second ArrayList: in sum and per separate number
+
+E.g.
+random generated list:
+[1, 94, 32, 13, 44, 1, 145]
+
+Console output:
+Found 2 Fibonacci numbers:
+1 - found 2 times
+13 - found 1 time
+
