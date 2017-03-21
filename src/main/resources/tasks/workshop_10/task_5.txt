@@ -12,4 +12,3 @@ Console output:
 Found 2 Fibonacci numbers:
 1 - found 2 times
 13 - found 1 time
-
