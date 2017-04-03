@@ -1,0 +1,22 @@
+Task#1
+
+- Create an interface FuelConsuming with method calculateFuelConsumption(int kilometers);
+- Create the following classes:
+    - Car
+    - Motorcycle
+    - Truck
+    - Aircraft
+    And implement FuelConsuming interface for them. Method calculateFuelConsumption() should return an amount of consumed fuel
+    in liters for required distance (take abstract average number for every vehicle type);
+- Create a class Calculator with main method, which contains:
+    - one Car object
+    - one Motorcycle object
+    - one Truck object
+    - one Aircraft object
+    - calculation of consumed fuel for every vehicle type printed out to console. E.g.
+
+    public static void main(String[] args) {
+        Car someCar = new Car();
+        System.out.println(someCar.calculateFuelConsumption(200));
+    }
+

@@ -1,0 +1,4 @@
+Java 8 Default Methods Explained in 5 minutes
+
+https://blog.idrsolutions.com/2015/01/java-8-default-methods-explained-5-minutes/
+https://www.tutorialspoint.com/java8/java8_default_methods.htm

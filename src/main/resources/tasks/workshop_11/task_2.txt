@@ -1,0 +1,33 @@
+Task#2
+
+Read about Java 8 Default Methods in useful_links.txt
+
+1. Create the following interfaces:
+ - RandomBooleanGenerator with default method generateRandomBoolean(), which returns random Boolean;
+ - RandomIntegerGenerator with default method generateRandomInteger(int limit), which returns random Integer;
+ - RandomStringGenerator with default method generateRandomString(int length), which returns random String;
+ - RandomDoubleGenerator with default method generateRandomDouble(double limit), which returns random Double;
+
+2. Create class RandomWeather with:
+ - Integer field temperature
+ - Boolean field isSunny
+ - default constructor, which initializes fields with random values using random object generators from Step 1
+ - overridden method toString(), which will return message like:
+ "Today is +18, the weather is sunny." or "Today is -46, the weather is cloudy."
+
+3. Create class RandomDude with:
+ - Integer field age
+ - String field name
+ - default constructor, which initializes fields with random values using random object generators from Step 1
+ - overridden method toString(), which will return message like:
+  "My name is Asfgowar and I'm 23-year-old."
+
+4. Create class RandomSnack with:
+ - Double field price
+ - String field name
+ - default constructor, which initializes fields with random values using random object generators from Step 1
+ - overridden method toString(), which will return message like:
+   "This is an awesome Egrdosdne and it costs only 5.8€"
+
+5. Create any class with main method, one RandomWeather object, one RandomDude object and one RandomSnack object.
+ Print to console information about each object
