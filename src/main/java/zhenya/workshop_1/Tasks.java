@@ -2,14 +2,12 @@ package zhenya.workshop_1;
 
 public class Tasks {
 
-
-
-    public static String getIntAsString(int x) {
+    private static String getIntAsString(int x) {
         x = 12;
         return String.valueOf(x);
     }
 
-    public static String getIntAsString2(int x) {
+    private static String getIntAsString2(int x) {
         x = 12;
         return Integer.toString(x);
     }
@@ -30,7 +28,7 @@ public class Tasks {
 
     //3. Write a short method, which takes 0 or 1 as an argument. It should return false if an argument was 0.
     // It should return true if an argument was 1. It should display an error if an argument does not equal 0 or 1
-    public static Boolean getTrue(int arg) {
+    private static Boolean getTrue(int arg) {
         switch (arg) {
             case 0:
                 return false;
@@ -49,7 +47,7 @@ public class Tasks {
     // NOT argument #1 = false
     //  NOT argument #2 = false
 
-    public static void displayResultsOfLogicalOperations(boolean a, boolean b) {
+    private static void displayResultsOfLogicalOperations(boolean a, boolean b) {
         System.out.println(String.format("argument #1 = %s, argument #2 = %s", a, b));
         System.out.println("argument #1 OR argument #2 = " + (a || b));
         System.out.println("argument #1 AND argument #2 = " + (a && b));
@@ -59,16 +57,15 @@ public class Tasks {
     }
 
     public static void main(String[] args) {
-
-        //task4
+        System.out.println("\n *Task 4*");
         displayResultsOfLogicalOperations(true, true);
         displayResultsOfLogicalOperations(false, true);
         displayResultsOfLogicalOperations(true, false);
         displayResultsOfLogicalOperations(false, false);
 
-        //taskBonus
-        double a = 20;
-        double b = 80;
+        System.out.println("\n *Task Bonus*");
+        double a = 20.0;
+        double b = 80.0;
         reminderLimit(a, b);
     }
 
@@ -80,11 +77,10 @@ public class Tasks {
     // 5. Write an "if" statement that displays a message "Total was over the limit"
     //  if the remaining total (#4) is equal to 20 or less
 
-    public static void reminderLimit(double a, double b){
-        System.out.println("*Bonus task*");
+    private static void reminderLimit(double a, double b) {
         double sum = (a + b) * 25;
         double reminder = sum % 40;
-        if (reminder <= 20){
+        if (reminder <= 20) {
             System.out.println("Total was over the limit");
         }
     }

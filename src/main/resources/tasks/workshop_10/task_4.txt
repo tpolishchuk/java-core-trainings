@@ -1,0 +1,4 @@
+Task#4
+
+Generate an ArrayList from 50 random integers in range from 0 to 25.
+Remove duplicated items from origin ArrayList and print result to console.

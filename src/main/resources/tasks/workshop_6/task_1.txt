@@ -1,0 +1,11 @@
+Task 1: Code formatting
+
+1. Read about Idea source code formatting
+https://www.jetbrains.com/help/idea/2016.3/reformatting-source-code.html
+2. Setup ready code formatter from folder setup_formatter. Make it always enabled
+3. Read about Save Actions Plugin
+https://github.com/dubreuia/intellij-plugin-save-actions/blob/master/README.md
+4. Install Save Actions Plugin from Idea Plugins menu as it is shown in setup_formatter/save_actions_plugin.png
+5. Make Save Actions Plugin enabled
+6. Write some draft class, but do not commit it. Play with formatting and make sure that your code is formatted
+automatically, when the file is saved

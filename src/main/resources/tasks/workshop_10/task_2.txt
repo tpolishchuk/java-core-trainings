@@ -1,0 +1,6 @@
+Task#2
+
+Generate an ArrayList from 50 random integers. Iterate through ArrayList and create two new ArrayLists:
+ - the first one with even members of origin ArrayList
+ - the second one with odd members of origin ArrayList
+Print both new ArrayLists to console

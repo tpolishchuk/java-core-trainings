@@ -1,0 +1,27 @@
+Task 1: Basic class creation
+
+Before start:
+1. Watch lectures 41-44 and perform challenges.
+2. Read materials and perform examples from tasks/workshop_5/useful_links.txt
+
+Task:
+1. In your package for workshop#5 create a class named BasePage
+
+It is a very basic representation of web page object. Imagine, that you are describing one of webpages
+Access modifiers are intentionally not defined here. Think about their implementation, do not use 'public' everywhere.
+Remember, that you should hide as much as possible: some of methods should be visible only inside class, some of them -
+for child classes and only a very small part - for external classes.
+
+It should contain:
+1. String constant BASE_URL = "http://www.buycarshere.com". It is the basic url of all our next pages
+2. String field partialURL. It is part of URL that could be changed. For example, /faq will be partial URL for
+http://www.buycarshere.com/faq page
+3. Constructor, which takes partialUrl as argument and sets partialUrl into class
+4. void method showHeader(). This method should print to console "Page header is shown"
+5. void method showFooter(). This method should print to console "Page footer is shown"
+6. void method showBody(). This method should print to console "Page body is shown"
+7. void method openPage(). This method should:
+- inform user about the URL he is visiting
+- show header
+- show body
+- show footer

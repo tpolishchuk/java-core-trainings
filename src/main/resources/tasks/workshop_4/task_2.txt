@@ -1,0 +1,50 @@
+Task 2: Character creation
+
+In this task we will create a full class of game character, which will be used in further Task#3 to create a small game.
+Character will be able to receive a damage, die, heal and grow from level to level by the following level table:
+Level -> Necessary Experience
+0 -> 0
+1 -> 100
+2 -> 200
+3 -> 300
+4 -> 400
+5 -> 500
+... etc.
+
+Before start:
+Perform Task#1
+
+Task:
+In your package for workshop#4 create a class named Character
+
+It should contain:
+1. private static final int HEALTH_MAXIMUM. It is the maximum value of health for yor character.
+It will be needed in method for healing your character
+2. string field 'nickname' with private access modifier
+3. field 'characterClass' of type CharacterClass with private access modifier
+4. int field 'level' with private access modifier
+5. int field 'health' with private access modifier
+6. int field 'experience' with private access modifier
+7. boolean field 'isAlive' with private access modifier
+8. getters and setters for all of fields
+9. Constructor, which takes only 2 arguments: String nickname, CharacterClass characterClass. Other fields should be
+initialized in the following way in constructor:
+ this.level = 0;
+ this.health = HEALTH_MAXIMUM;
+ this.experience = 0;
+ this.isAlive = true;
+10. public void method healToMaximum(). This method should:
+ - set 'isAlive' field to true
+ - increase health to maximum level
+11. public void method getDamage(). This method should:
+ - take int argument 'damage'
+ - decrease health with a damage value
+ - set 'isAlive' field to false if character has no positive health points left
+12. public void increaseLevel(). This method should:
+ - update 'level' field of character object
+ - print to console "Congratulations, %CHARACTER_NICKNAME%, you've reached %CHARACTER_LEVEL% level!"
+13. public void method increaseExperience(). This method should:
+ - take int argument 'experiencePoints'
+ - increase character's experience with the value of experiencePoints
+ - print to condole "%CHARACTER_NICKNAME% got %EXPERIENCE_BONUS_POINTS% experience points. Now experience is %CHARACTER_EXPERIENCE% points"
+ - increase character level in accordance with level table from beginning of this task

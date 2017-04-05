@@ -1,0 +1,5 @@
+Task#3
+
+Generate an ArrayList from 50 random integers. Iterate through ArrayList and remove even numbers from it.
+You do not need to create a new ArrayList, just use origin one.
+Print to console modified origin ArrayList.
