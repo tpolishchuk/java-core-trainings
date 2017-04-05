@@ -8,7 +8,6 @@ import com.sun.xml.internal.rngom.parse.host.Base;
 public class LoginPage extends BasePage {
 
     public LoginPage(String partialURL) {
-
         super(partialURL);
     }
 
@@ -22,6 +21,5 @@ public class LoginPage extends BasePage {
         showLoginForm();
         showFooter();
         System.out.println("***");
-
     }
 }
