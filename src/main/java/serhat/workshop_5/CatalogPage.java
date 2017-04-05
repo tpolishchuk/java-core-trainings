@@ -43,7 +43,5 @@ public class CatalogPage extends BasePage {
             showFooter();
             System.out.println("***\n");
         }
-
-
     }
 }

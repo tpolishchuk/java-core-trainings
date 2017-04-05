@@ -52,4 +52,5 @@ public class BasePage {
     public static void setPartialURL(String partialURL) {
         BasePage.partialURL = partialURL;
     }
+    
 }
