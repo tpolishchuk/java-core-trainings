@@ -7,6 +7,6 @@ public class RandomValuesGenerator {
     }
 
     protected void generateRandomStuff(int objectsAmount){
-        System.out.println(String.format("Unable to create %d unknown arguments", objectsAmount));
+        System.out.println(String.format("Unable to create %d unknown object(s)", objectsAmount));
     }
 }
