@@ -26,7 +26,7 @@ public class Table {
 
     @Override
     public boolean equals(Object o) {
-        if ((o instanceof Table) && ((Table) o).getPrice() == this.price && ((Table) o).getTitle() == this.title) {
+        if ((o instanceof Table) && ((Table) o).getPrice() == this.price && ((Table) o).getTitle().equals(this.title)) {
             return true;
         }
         else {
