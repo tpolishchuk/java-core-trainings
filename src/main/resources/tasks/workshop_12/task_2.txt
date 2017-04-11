@@ -1,0 +1,22 @@
+Task#2
+
+1. Create a class Satellite, which has
+ - String field name;
+ - inner class Coordinates;
+ - method start();
+ - method getCoordinates();
+
+ Class Coordinates should have two Double fields:
+  - elevation;
+  - azimuth;
+
+2. Create a class FlightCenter, which contains main() method
+
+3. Write code, which:
+ - creates a Satellite object;
+ - writes "Launching %name%", when method start() is called;
+ - writes a Satellite coordinates to console every 1 second until user presser R button on keyboard;
+ - writes "Preparing to return %name% to Earth" after button R is pressed and exits;
+
+Think about codestyle and ways to optimize your code as much as possible. Probably, you need to write some additional
+methods and provide additional variables
