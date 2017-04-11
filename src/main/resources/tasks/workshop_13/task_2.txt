@@ -1,0 +1,57 @@
+Task#2
+
+Before this task you need to add some dependencies in pom.xml file:
+
+<dependency>
+   <groupId>org.apache.commons</groupId>
+   <artifactId>commons-exec</artifactId>
+   <version>1.3</version>
+</dependency>
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.3.1</version>
+</dependency>
+
+And read the following documentation, which will help you in further steps:
+- http://www.javacreed.com/simple-gson-example/ - Google GSON example
+- https://www.mkyong.com/java/how-do-convert-java-object-to-from-json-format-gson-api/ - one more Google GSON example
+- http://www.studytrails.com/java/json/java-google-json-serialize-inner-classes/ - Java Google Json (Gson) Serializing Inner classes
+- http://www.avajava.com/tutorials/lessons/how-do-i-read-a-string-from-a-file-using-commons-io.html - reading file
+to String using org.apache.commons.io.FileUtils
+
+Try to play with given examples, you will need this experience for task
+
+As you understood from a preparation stage, we will create converters from JSON file content to Java object
+A requested common algorithm of converter should be the following:
+
+- You have a .json file with content
+- Content from .json file should be read to String using FileUtils
+- String should be turned into Java object using Google GSON
+
+So, your task will be the following:
+1. Create a class AbstractJsonToObjectConverter
+2. Create a class JsonToCustomerConverter inherited from AbstractJsonToObjectConverter
+3. Create a class JsonToProductDBConfigurationConverter inherited from AbstractJsonToObjectConverter
+4. For all of converters you need the following methods:
+
+- initializeGson() - which initializes Gson object for further usage
+- getJsonAsString(String jsonFilePath) - which takes jsonFilePath as an argument and returns content of .json file as
+  String
+- convertStringToObject(String jsonFileContent) - which takes jsonFileContent and returns it as Customer or
+ProductDBConfiguration object
+- convertJsonToObject(String jsonFilePath) - which takes jsonFilePath as an argument and returns content of
+.json file as Customer or ProductDBConfiguration object
+
+It is up to you to decide which methods will be abstract in AbstractJsonToObjectConverter and then overridden in
+JsonToCustomerConverter and JsonToProductDBConfigurationConverter. Some of methods can be implemented directly in
+AbstractJsonToObjectConverter. Try to use all of knowledge gained from lectures, because since this time you will
+always optimize your code and move common parts to abstraction
+
+5. Create classes Customer and ProductDBConfiguration in accordance with .json file structure. To simplify the task,
+I've provided you an example of Customer class in Customer.example
+To create ProductDBConfiguration class you can use http://www.jsonschema2pojo.org/ as a tip, but don't copypaste its
+solution
+
+6. Create a class Executor with main() method, which will print out to console objects Customer and ProductDBConfiguration,
+serialized from customer.json and product_db_configuration.json

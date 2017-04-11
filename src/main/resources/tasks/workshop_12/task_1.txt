@@ -1,0 +1,38 @@
+Task#1
+
+1. Create a class RegularGermanVerb, which contains:
+
+    - private inner class Praesens;
+    - private inner class Praeteritum;
+    - private inner class Imperativ;
+    - private inner class PartizipZwei;
+
+2. Create a class Executor with main() method, which has at least 3 RegularGermanVerb objects
+   Print to console each form of requested verb, using common rules of German language grammar:
+
+   - http://www.dartmouth.edu/~deutsch/Grammatik/PresentTense/Present.html
+   - http://www.dartmouth.edu/~deutsch/Grammatik/SimplePast/SimplePast.html
+   - http://www.dartmouth.edu/~deutsch/Grammatik/Imperative/Imperativ.html
+   - https://www.vocabulix.com/german/past-participle-partizip.shtml
+
+   Example:
+
+   public static void main(String[] args) {
+        RegularGermanVerb verb1 = new RegularGermanVerb("hören");
+        verb1.getPraesens();
+        verb1.getPraeteritum();
+        verb1.getImperativ();
+        verb1.getPartizipZwei();
+        ...
+   }
+
+   Console output:
+
+   Verb: hören
+   Präsens: hören
+   Präteritum: hörten
+   Partizip II: gehört
+   ...
+
+Think about codestyle and ways to optimize your code as much as possible. Probably, you need to write some additional
+methods and provide additional variables
