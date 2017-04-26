@@ -1,0 +1,7 @@
+Task#1
+
+1. Create 2 classes with name Car in different packages. Each class should contain different fields and one method toString()
+Method toString() should return all object fields with their values.
+
+2. Create a class named Controller with main() method.
+Create at least 2 Car objects from different packages in Controller and print them as String to console
