@@ -4,18 +4,17 @@ import java.util.Scanner;
 
 public class RealPerson extends Player {
 
-    public Scanner scanner;
+    private Scanner scanner;
 
-    public RealPerson(String name) {
+    protected RealPerson(String name) {
         super(name);
     }
 
-    public int typeRandomInt(int range) {
+    protected int typeRandomInt(int range) {
         System.out.println(getName() + ", please, enter your number from 0 to " + range + ". \r");
 
-        Scanner in = new Scanner(System.in);
-        int num = in.nextInt();
+        Scanner scanner = new Scanner(System.in);
 
-        return num;
+        return scanner.nextInt();
     }
 }
