@@ -4,11 +4,12 @@ import java.util.Random;
 
 public class BrandsSort {
 
-    private static String[] brands = {"Toyota", "Citroen", "Mercedes", "BMW", "Mini", "Ford", "Nissan", "Audi"};
+    private static final String[] brands = {"Toyota", "Citroen", "Mercedes", "BMW", "Mini", "Ford", "Nissan", "Audi"};
+    private static final int RANGE = 8;
 
     public static void main(String[] args) {
 
-        String[] generateRandomBrands = generateRandomBrands(8);
+        String[] generateRandomBrands = generateRandomBrands(RANGE);
         System.out.println("As it is: ");
         for (String brand : generateRandomBrands)
             System.out.println(brand);
@@ -31,10 +32,8 @@ public class BrandsSort {
     }
 
     private static String[] sortBrands(String[] brands) {
-        String[] sortedBrands = new String[brands.length];
-        for (int i = 0; i < brands.length; i++) {
-            sortedBrands[i] = brands[i];
-        }
+        String[] sortedBrands = brands;
+
         boolean flag = true;
         String temp;
         while (flag) {
