@@ -1,4 +1,4 @@
-package zhenya.workshop_11;
+package zhenya.workshop_11.Task2;
 
 public class RandomDude implements RandomIntegerGenerator, RandomStringGenerator {
     private int age;

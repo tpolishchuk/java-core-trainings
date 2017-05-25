@@ -1,4 +1,4 @@
-package zhenya.workshop_11;
+package zhenya.workshop_11.Task2;
 
 import java.util.Random;
 

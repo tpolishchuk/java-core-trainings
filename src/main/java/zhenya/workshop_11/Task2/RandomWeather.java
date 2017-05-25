@@ -1,4 +1,4 @@
-package zhenya.workshop_11;
+package zhenya.workshop_11.Task2;
 
 public class RandomWeather implements RandomIntegerGenerator, RandomBooleanGenerator {
     private int temperature;
@@ -18,12 +18,13 @@ public class RandomWeather implements RandomIntegerGenerator, RandomBooleanGener
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String message;
-        if (isSunny()){
-            message = "Today is +" + getTemperature() +", the weather is sunny";
-        } else {
-            message = "Today is -" + getTemperature() +", the weather is cloudy";
+        if (isSunny()) {
+            message = "Today is +" + getTemperature() + ", the weather is sunny";
+        }
+        else {
+            message = "Today is -" + getTemperature() + ", the weather is cloudy";
         }
         return message;
     }

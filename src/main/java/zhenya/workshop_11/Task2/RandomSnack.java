@@ -1,16 +1,16 @@
-package zhenya.workshop_11;
+package zhenya.workshop_11.Task2;
 
 public class RandomSnack implements RandomDoubleGenerator, RandomStringGenerator {
     private double price;
     private String name;
 
     public RandomSnack() {
-        this.price = generateRandomDouble(50000);
-        this.name = generateRandomString(10);
+        this.price = generateRandomDouble(102);
+        this.name = generateRandomString(9);
     }
 
-    private int getAge() {
-        return age;
+    private double getPrice() {
+        return price;
     }
 
     private String getName() {
@@ -18,9 +18,10 @@ public class RandomSnack implements RandomDoubleGenerator, RandomStringGenerator
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String name = Character.toUpperCase(getName().charAt(0)) + getName().substring(1);
+        String price = String.format("%.2f", getPrice());
 
-        return  "My name is " + name + " and I'm " + getAge() + "-year-old.";
+        return "This is an awesome " + name + " and it costs only " + price + "€";
     }
 }
