@@ -12,15 +12,15 @@ public class BasePage {
         this.partialURL = partialURL;
     }
 
-    public void showHeader() {
+    private void showHeader() {
         System.out.println("Page header is shown");
     }
 
-    public void showFooter() {
+    private void showFooter() {
         System.out.println("Page footer is shown");
     }
 
-    public void showBody() {
+    private void showBody() {
         System.out.println("Page body is shown");
     }
 
