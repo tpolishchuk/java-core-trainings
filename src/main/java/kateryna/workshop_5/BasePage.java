@@ -17,11 +17,19 @@ public class BasePage {
     }
 
     private void showFooter() {
-        System.out.println("Page footer is shown");
+        System.out.println("Page footer is shown " + "\n");
     }
 
-    private void showBody() {
+    public void showBody() {
         System.out.println("Page body is shown");
+    }
+
+    public String getPartialURL() {
+        return partialURL;
+    }
+
+    public void setPartialURL(String partialURL) {
+        this.partialURL = partialURL;
     }
 
     public void openPage() {
