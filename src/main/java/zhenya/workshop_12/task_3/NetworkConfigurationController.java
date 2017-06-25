@@ -10,35 +10,30 @@ import java.util.List;
 
 public class NetworkConfigurationController {
 
-    List<NetworkInterfaceConfiguration> networkInterfacesConfiguration = new ArrayList();
+    private List<NetworkInterfaceConfiguration> networkInterfacesConfiguration = new ArrayList();
 
-    public void showInterfacesWithIP() {
+    protected void showInterfacesWithIP() {
         collectNetworkInterfacesConfiguration();
 
-        System.out.println(networkInterfacesConfiguration);
+        for (NetworkInterfaceConfiguration elem_ : networkInterfacesConfiguration) {
+            System.out.println(elem_.getName() + " : " + elem_.getIpv4());
+        }
     }
 
-    public void collectNetworkInterfacesConfiguration() {
+    private void collectNetworkInterfacesConfiguration() {
         try {
+            for (NetworkInterface ni : Collections.list(NetworkInterface.getNetworkInterfaces())) {
+                NetworkInterfaceConfiguration networkInterfaceConfiguration = new NetworkInterfaceConfiguration();
 
-            NetworkInterfaceConfiguration networkInterfaceConfiguration
-                    = new NetworkInterfaceConfiguration();
-
-            for (NetworkInterface ni :
-                    Collections.list(NetworkInterface.getNetworkInterfaces())) {
                 if (ni.isLoopback() || !ni.isUp()) {
                     continue;
                 }
                 for (InetAddress address : Collections.list(ni.getInetAddresses())) {
                     if (address instanceof Inet4Address) {
-
                         networkInterfaceConfiguration.setName(ni.getName());
                         networkInterfaceConfiguration.setIpv4(address);
 
                         networkInterfacesConfiguration.add(networkInterfaceConfiguration);
-
-                        System.out.println(networkInterfaceConfiguration.getName() + " : " +
-                                           networkInterfaceConfiguration.getIpv4());
                     }
                 }
             }

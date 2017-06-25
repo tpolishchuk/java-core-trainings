@@ -4,8 +4,8 @@ import java.net.InetAddress;
 
 public class NetworkInterfaceConfiguration {
 
-    public String name;
-    public String ipv4;
+    private String name;
+    private String ipv4;
 
     protected String getName() {
         return name;
